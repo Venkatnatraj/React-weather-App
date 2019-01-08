@@ -23,11 +23,11 @@ class App extends React.Component {
     const data = await api_call.json();
     if (city && country) {
       this.setState({
-        // temperature: data.main.temp,
-        // city: data.name,
-        // country: data.sys.country,
-        // humidity: data.main.humidity,
-        // description: data.weather[0].description,
+        temperature: data.main.temp,
+        city: data.name,
+        country: data.sys.country,
+        humidity: data.main.humidity,
+        description: data.weather[0].description,
         error: ""
       });
     } else {
